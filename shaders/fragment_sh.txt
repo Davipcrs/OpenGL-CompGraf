@@ -1,0 +1,9 @@
+#version 330 core
+in vec3 s_cor;
+
+out vec4 ss_cor;
+
+void main(){
+    ss_cor = vec4(s_cor, 1.0);
+    
+}

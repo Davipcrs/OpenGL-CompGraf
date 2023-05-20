@@ -1,0 +1,11 @@
+#version 330 core
+// e: entrada (in)
+// s: saida (out)
+layout (location=0) in vec3 e_vertice;
+layout (location=1) in vec3 e_cor;
+out vec3 s_cor;
+void main(){
+    // conversao para coordenadas homogeneas
+    gl_Position = vec4(e_vertice, 1.0);
+    s_cor = e_cor;
+}
